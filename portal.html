@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>
+HomePage!!
+</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+<style>
+
+body {
+  height:100%;
+  width:100%;
+}
+
+header {
+  background-image:url('http://www.dizedesign.de/snippets/header-pack-v.1.0/header-test.jpg');
+  height:790px;
+  background-size:cover;
+  /*background-attachment:fixed;*/
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+
+header .row {
+  margin-top:255px;
+}
+
+header h1 {
+  text-align:center;
+  color:#eee;
+  text-shadow:1px 1px 1px #333;
+  font-weight:600;
+  text-transform:uppercase;
+  font-family:'Pacifico';
+  letter-spacing:13px;
+}
+
+header p {
+  text-align:center;
+  color:#eee;
+  text-shadow:1px 1px 1px #333;
+  font-size:17px;
+  letter-spacing:2px;
+  padding-top:15px;
+}
+
+#go {
+  padding-top:20px;
+  background-image:url('http://dizedesign.de/snippets/header-pack-v.1.0/header-180.jpg');
+  height:750px;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+#go .row {
+  padding-top:45%;
+}
+
+#go h1 {
+  text-align:center;
+  color:#eee;
+  text-shadow:1px 1px 1px #333;
+  font-weight:600;
+  text-transform:uppercase;
+  font-family:'Pacifico';
+  letter-spacing:13px;
+}
+
+#go p {
+  text-align:center;
+  color:#eee;
+  text-shadow:1px 1px 1px #333;
+  font-size:17px;
+  letter-spacing:2px;
+  padding-top:15px;
+}
+
+/* NAVBAR */ 
+.navbar-default {
+  background-image:none;
+  background-image:none;
+  background-image:none;
+  background-image:none;
+  filter:none;
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat:repeat-x;
+  border-radius:0px;
+  -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+  background-color:transparent;
+}
+
+.navbar-default .navbar-link:hover {
+  color:#eee;
+}
+
+.navbar-default .navbar-link {
+  color:#fff;
+  letter-spacing:3px;
+  text-shadow:0px 0px 10px #000;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  color:#eee;
+  background-color:transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color:#fff;
+  letter-spacing:3px;
+  text-shadow:0px 0px 10px #000;
+}
+
+/* Scroll Down */
+#section05 a {
+  padding-top:70px;
+}
+
+#section05 a span {
+  position:absolute;
+  top:0;
+  left:50%;
+  width:24px;
+  height:24px;
+  margin-left:-12px;
+  border-left:1px solid #fff;
+  border-bottom:1px solid #fff;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  -webkit-animation:sdb05 1.5s infinite;
+  animation:sdb05 1.5s infinite;
+  box-sizing:border-box;
+}
+
+@keyframes sdb05 {
+  0% {
+    transform:rotate(-45deg) translate(0, 0);
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    transform:rotate(-45deg) translate(-20px, 20px);
+    opacity:0;
+  }
+}
+
+.demo a {
+  bottom:20px;
+  z-index:4444;
+  display:inline-block;
+  -webkit-transform:translate(0, -50%);
+  transform:translate(0, -50%);
+  color:#fff;
+  font:normal 400 17px/1 'Josefin Sans', sans-serif;
+  letter-spacing:.1em;
+  text-decoration:none;
+  transition:opacity .3s;
+}
+
+.demo a:hover {
+  opacity:.5;
+}
+
+.arrow {
+  margin-top:155px;
+}
+
+#yes{
+margin:auto;
+background-color:white;
+padding:25px;
+float:left;
+color: black;
+border-radius:100%;
+font-weight: bold;}
+
+.btn-primary{
+margin:auto;
+background-color:white;
+padding:25px;
+float:right;
+color: black;
+border-radius:100%;
+font-weight: bold;}
+
+.jumbotron {
+    background-color:   #330033; !important; 
+	width:100%;
+	text-align:center;
+}
+
+h1{
+font-size:50px;
+}
+
+</style>
+
+
+<script type="text/javascript">
+	/* Fade */
+(function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 200) {
+                $('.navbar').fadeIn();
+            } else {
+                $('.navbar').fadeOut();
+            }
+        });
+    });
+
+});
+  }(jQuery));
+  
+  /* One-Page Scrolling */
+  $(document).ready(function() {
+	// navigation click actions	
+	$('.scroll-link').on('click', function(event){
+		event.preventDefault();
+		var sectionID = $(this).attr("data-id");
+		scrollToID('#' + sectionID, 1250);
+	});
+	// scroll to top action
+	$('.scroll-top').on('click', function(event) {
+		event.preventDefault();
+		$('html, body').animate({scrollTop:0}, 'slow'); 		
+	});
+	// mobile nav toggle
+	$('#nav-toggle').on('click', function (event) {
+		event.preventDefault();
+		$('#main-nav').toggleClass("open");
+	});
+});
+// scroll function
+function scrollToID(id, speed){
+	var offSet = 0;
+	var targetOffset = $(id).offset().top - offSet;
+	var mainNav = $('#main-nav');
+	$('html,body').animate({scrollTop:targetOffset}, speed);
+	if (mainNav.hasClass("open")) {
+		mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+		mainNav.removeClass("open");
+	}
+}
+if (typeof console === "undefined") {
+    console = {
+        log: function() { }
+    };
+}
+
+/* Scroll Down */
+$(function() {
+	$('a[href*=#]').on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+	});
+});
+</script>
+</head>
+
+<body id="page-top" text="black">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="http://www.dizedesign.de/" target="_blank">Dize Design</a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="#" class="scroll-link" data-id="page-top">Back to Top</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome Students and Teachers to </h1>
+                    <p>LearnandPractise.com</p>
+                </div>
+                <div class="col-md-12">
+                    
+                    <section id="section05" class="demo arrow"><center>
+                    <h1></h1><a href="#" class="scroll-link" data-id="go"><span></span>Scroll Down to start your journey as a Master or as an Apprentice</a></center></section>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="go">
+    	<div style="height: 100px;">
+
+    	</div>
+        <div class="container" style="width: 900px;">
+            <div class="page-header" >
+				<h1>Student's Portal</h1>
+			</div>
+			<div class="jumbotron" class="col-md-6">
+				<a href="stud_login.html">
+				<button type = "button" class="btn-danger btn-lg" id="yes">Login!</button>
+			</a>
+				<a href="stud_registration.php">
+				<button type = "button" class="btn-primary btn-lg">Register!</button>
+				</a>
+			</div>
+			<div class="page-header">
+				<h1>Teacher's Portal</h1>
+			</div>
+			<div class="jumbotron" class="col-md-6">
+				<a href="prof_login.html">
+				<button type = "button" class="btn-danger btn-lg" id="yes">Login!</button>
+				<a href="prof_registration.html">
+				<button type = "button" class="btn-primary btn-lg">Register!</button>
+				</a>
+			</div>
+        </div>
+    </section>
+</body>
+</html>
